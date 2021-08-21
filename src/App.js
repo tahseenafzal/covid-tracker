@@ -15,7 +15,7 @@ function App() {
         : setData(await fetchData());
     };
     getData();
-  }, [country[0]]);
+  }, [country[0] ? country[0] : null]);
 
   return (
     <div className={styles.container}>
