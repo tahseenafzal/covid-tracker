@@ -33,7 +33,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
             <Typography color="textSecondary">
-              {" "}
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
@@ -62,7 +61,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
             <Typography color="textSecondary">
-              {" "}
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
@@ -91,7 +89,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
             <Typography color="textSecondary">
-              {" "}
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
