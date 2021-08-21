@@ -5,7 +5,6 @@ import { fetchCountries } from "../../api";
 
 const CountryPicker = ({ country }) => {
   const [countries, setCountries] = useState([]);
-
   useEffect(() => {
     const getCountries = async () => {
       setCountries(await fetchCountries());
@@ -17,7 +16,7 @@ const CountryPicker = ({ country }) => {
     <FormControl
       className={styles.formControl}
       onChange={(e) => {
-        country[1](e.target.value);
+        country(e.target.value);
       }}
     >
       <NativeSelect>
